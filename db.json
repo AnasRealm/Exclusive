@@ -1,0 +1,365 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "5d21",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "7f37",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "53dc",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "e0bb",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "418f",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "5f8c",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "3528",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "aaa"
+    },
+    {
+      "id": "2680",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "ششش"
+    },
+    {
+      "id": "dac2",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "ششش"
+    },
+    {
+      "id": "1201",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "7326",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "ششش"
+    },
+    {
+      "id": "a80c",
+      "name": "anas",
+      "email": "anas.alholo.2005@gmail.com",
+      "password": "ششش"
+    },
+    {
+      "id": "10f1",
+      "name": "anas",
+      "email": "anas@gmail.com",
+      "password": "aaa"
+    },
+    {
+      "id": "97fa",
+      "name": "anas",
+      "email": "anas@gmail.com",
+      "password": "aaa"
+    },
+    {
+      "id": "8060",
+      "name": "anas",
+      "email": "anas@gmail.com",
+      "password": "aaa"
+    },
+    {
+      "id": "c47f",
+      "name": "anas",
+      "email": "anas@gmail.com",
+      "password": "aaa"
+    },
+    {
+      "id": "a476",
+      "name": "anas",
+      "email": "anas@gmail.com",
+      "password": "aaa"
+    },
+    {
+      "id": "f608",
+      "name": "anas",
+      "email": "anas@gmail.com",
+      "password": "ششش"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "HAVIT HV-G92 Gamepad",
+      "price": 120,
+      "originalPrice": 160,
+      "discount": 40,
+      "rating": 4.5,
+      "reviews": 88,
+      "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=300",
+      "category": "Gaming",
+      "isNew": false
+    },
+    {
+      "id": "2",
+      "name": "AK-900 Wired Keyboard",
+      "price": 960,
+      "originalPrice": 1160,
+      "discount": 35,
+      "rating": 4,
+      "reviews": 75,
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300",
+      "category": "Electronics",
+      "isNew": false
+    },
+    {
+      "id": "3",
+      "name": "IPS LCD Gaming Monitor",
+      "price": 370,
+      "originalPrice": 400,
+      "discount": 30,
+      "rating": 5,
+      "reviews": 99,
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300",
+      "category": "Electronics",
+      "isNew": false
+    },
+    {
+      "id": "4",
+      "name": "S-Series Comfort Chair",
+      "price": 375,
+      "originalPrice": 400,
+      "discount": 25,
+      "rating": 4.5,
+      "reviews": 99,
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300",
+      "category": "Furniture",
+      "isNew": true
+    },
+    {
+      "id": "5",
+      "name": "iPhone 14 Pro",
+      "price": 999,
+      "originalPrice": 1199,
+      "discount": 20,
+      "rating": 4.8,
+      "reviews": 150,
+      "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=300",
+      "category": "Electronics",
+      "isNew": true
+    },
+    {
+      "id": "6",
+      "name": "MacBook Pro M2",
+      "price": 1299,
+      "originalPrice": 1499,
+      "discount": 15,
+      "rating": 4.9,
+      "reviews": 200,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300",
+      "category": "Electronics",
+      "isNew": false
+    },
+    {
+      "id": "7",
+      "name": "Sony WH-1000XM4 Headphones",
+      "price": 299,
+      "originalPrice": 349,
+      "discount": 15,
+      "rating": 4.7,
+      "reviews": 320,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300",
+      "category": "Electronics",
+      "isNew": false
+    },
+    {
+      "id": "8",
+      "name": "Nike Air Max 270",
+      "price": 150,
+      "originalPrice": 180,
+      "discount": 17,
+      "rating": 4.3,
+      "reviews": 89,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300",
+      "category": "Fashion",
+      "isNew": true
+    },
+    {
+      "id": "9",
+      "name": "Samsung Galaxy Watch 5",
+      "price": 279,
+      "originalPrice": 329,
+      "discount": 15,
+      "rating": 4.4,
+      "reviews": 156,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300",
+      "category": "Electronics",
+      "isNew": false
+    },
+    {
+      "id": "10",
+      "name": "Canon EOS R5 Camera",
+      "price": 3899,
+      "originalPrice": 4299,
+      "discount": 10,
+      "rating": 4.9,
+      "reviews": 67,
+      "image": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=300",
+      "category": "Electronics",
+      "isNew": true
+    },
+    {
+      "id": "11",
+      "name": "Adidas Ultraboost 22",
+      "price": 190,
+      "originalPrice": 220,
+      "discount": 14,
+      "rating": 4.6,
+      "reviews": 234,
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=300",
+      "category": "Fashion",
+      "isNew": false
+    },
+    {
+      "id": "12",
+      "name": "Dell XPS 13 Laptop",
+      "price": 1199,
+      "originalPrice": 1399,
+      "discount": 14,
+      "rating": 4.5,
+      "reviews": 178,
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300",
+      "category": "Electronics",
+      "isNew": false
+    },
+    {
+      "id": "13",
+      "name": "PlayStation 5 Console",
+      "price": 499,
+      "originalPrice": 599,
+      "discount": 17,
+      "rating": 4.8,
+      "reviews": 445,
+      "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=300",
+      "category": "Gaming",
+      "isNew": true
+    },
+    {
+      "id": "14",
+      "name": "Apple AirPods Pro 2",
+      "price": 249,
+      "originalPrice": 279,
+      "discount": 11,
+      "rating": 4.7,
+      "reviews": 289,
+      "image": "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=300",
+      "category": "Electronics",
+      "isNew": false
+    },
+    {
+      "id": "15",
+      "name": "IKEA MARKUS Office Chair",
+      "price": 229,
+      "originalPrice": 279,
+      "discount": 18,
+      "rating": 4.2,
+      "reviews": 167,
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300",
+      "category": "Furniture",
+      "isNew": false
+    },
+    {
+      "id": "16",
+      "name": "Razer DeathAdder V3 Mouse",
+      "price": 89,
+      "originalPrice": 109,
+      "discount": 18,
+      "rating": 4.4,
+      "reviews": 134,
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=300",
+      "category": "Gaming",
+      "isNew": true
+    },
+    {
+      "id": "17",
+      "name": "LG 27'' 4K Monitor",
+      "price": 399,
+      "originalPrice": 479,
+      "discount": 17,
+      "rating": 4.6,
+      "reviews": 98,
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300",
+      "category": "Electronics",
+      "isNew": false
+    },
+    {
+      "id": "18",
+      "name": "Levi's 501 Original Jeans",
+      "price": 89,
+      "originalPrice": 119,
+      "discount": 25,
+      "rating": 4.1,
+      "reviews": 267,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=300",
+      "category": "Fashion",
+      "isNew": false
+    },
+    {
+      "id": "19",
+      "name": "Nintendo Switch OLED",
+      "price": 349,
+      "originalPrice": 399,
+      "discount": 13,
+      "rating": 4.5,
+      "reviews": 223,
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300",
+      "category": "Gaming",
+      "isNew": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics",
+      "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300"
+    },
+    {
+      "id": "2",
+      "name": "Gaming",
+      "image": "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=300"
+    },
+    {
+      "id": "3",
+      "name": "Furniture",
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300"
+    }
+  ]
+}

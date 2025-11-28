@@ -1,0 +1,31 @@
+.contact-page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.contact-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.contact-breadcrumb {
+  margin-bottom: 80px;
+}
+
+.contact-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .contact-container {
+    padding: 40px 20px;
+  }
+}

@@ -1,0 +1,147 @@
+.services-section {
+  margin: 140px 0 80px 0;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 88px;
+  max-width: 943px;
+  margin: 0 auto;
+}
+
+.service-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background: #C1C0C1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background: #DB4444;
+  transform: scale(1.1);
+}
+
+.service-icon::before {
+  content: '';
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background: #000;
+  border-radius: 50%;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.service-card:hover .service-icon::before {
+  background: #fff;
+}
+
+.service-icon img {
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  position: relative;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+.service-card:hover .service-icon img {
+  filter: brightness(0);
+}
+
+.service-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover .service-title {
+  color: #DB4444;
+}
+
+.service-description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .services-section {
+    padding: 0 15px;
+  }
+  
+  .services-grid {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .services-section {
+    margin: 80px 0 60px 0;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    margin: 60px 0 40px 0;
+    padding: 0 10px;
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .service-icon::before {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .service-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .service-title {
+    font-size: 18px;
+  }
+  
+  .service-description {
+    font-size: 13px;
+  }
+}

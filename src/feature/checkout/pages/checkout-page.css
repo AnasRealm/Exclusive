@@ -1,0 +1,512 @@
+.checkout-page-container {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 0 20px;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #000;
+}
+
+.breadcrumb span {
+  color: #d94343;
+  font-weight: 500;
+}
+
+.checkout-page-container h2 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.checkout-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.billing-form {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.billing-form label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.billing-form input[type="text"],
+.billing-form input[type="tel"],
+.billing-form input[type="email"] {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.billing-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.billing-form label.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.order-summary {
+  flex: 0 0 350px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.order-summary .order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-summary .order-item:last-child {
+  border-bottom: none;
+}
+
+.order-summary .order-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.item-details {
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.3;
+}
+
+.item-quantity {
+  font-size: 12px;
+  color: #666;
+  font-weight: 400;
+}
+
+.item-price {
+  font-weight: 600;
+  font-size: 14px;
+  color: #d9534f;
+  min-width: 60px;
+  text-align: right;
+}
+
+.order-summary hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+.order-summary .total-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.payment-methods {
+  margin-top: 20px;
+}
+
+.payment-methods .payment-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 12px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.payment-methods .payment-option:hover {
+  border-color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.payment-methods label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 12px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.payment-methods label:hover {
+  border-color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.payment-methods input[type="radio"]:checked+span {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.payment-methods input[type="radio"] {
+  margin-right: 8px;
+}
+
+.payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.payment-icon {
+  height: 14px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.coupon-section {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.coupon-input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.apply-coupon-btn {
+  padding: 10px 20px;
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-coupon-btn:hover {
+  background-color: #c9302c;
+}
+
+.place-order-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px 0;
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Responsive styles */
+
+/* Large tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .checkout-page-container {
+    max-width: 800px;
+    padding: 0 15px;
+  }
+
+  .checkout-content {
+    gap: 30px;
+  }
+
+  .order-summary {
+    flex: 0 0 300px;
+  }
+}
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+  .checkout-page-container {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 20px auto;
+  }
+
+  .checkout-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .billing-form {
+    flex: 1 1 auto;
+  }
+
+  .order-summary {
+    flex: 1 1 auto;
+  }
+
+  .checkout-page-container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .billing-form label {
+    font-size: 13px;
+  }
+
+  .billing-form input[type="text"],
+  .billing-form input[type="tel"],
+  .billing-form input[type="email"] {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .order-summary {
+    padding: 15px;
+  }
+
+  .order-summary .order-item {
+    gap: 8px;
+    margin-bottom: 10px;
+    padding: 8px 0;
+  }
+
+  .order-summary .order-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .item-details {
+    margin-left: 8px;
+  }
+
+  .item-title {
+    font-size: 13px;
+  }
+
+  .item-quantity {
+    font-size: 11px;
+  }
+
+  .item-price {
+    font-size: 13px;
+  }
+
+  .coupon-section {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .apply-coupon-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .place-order-btn {
+    padding: 10px 0;
+    font-size: 15px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .checkout-page-container {
+    padding: 0 5px;
+    margin: 10px auto;
+  }
+
+  .checkout-page-container h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .billing-form {
+    gap: 10px;
+  }
+
+  .billing-form label {
+    font-size: 12px;
+  }
+
+  .billing-form input[type="text"],
+  .billing-form input[type="tel"],
+  .billing-form input[type="email"] {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .billing-form label.checkbox-label {
+    font-size: 12px;
+  }
+
+  .order-summary {
+    padding: 10px;
+  }
+
+  .order-summary .order-item {
+    gap: 6px;
+    margin-bottom: 8px;
+    padding: 6px 0;
+  }
+
+  .order-summary .order-item img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .item-details {
+    margin-left: 6px;
+  }
+
+  .item-title {
+    font-size: 12px;
+  }
+
+  .item-quantity {
+    font-size: 10px;
+  }
+
+  .item-price {
+    font-size: 12px;
+  }
+
+  .payment-methods label {
+    font-size: 13px;
+  }
+
+  .coupon-input {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .apply-coupon-btn {
+    position: relative;
+    left: 0px;
+    font-size: 12px;
+  }
+
+  .place-order-btn {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h3 {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.modal-content p {
+  margin: 0 0 25px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.signup-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.signup-btn:hover {
+  background: #c82333;
+}
+
+.cancel-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background: #5a6268;
+}
