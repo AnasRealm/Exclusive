@@ -44,14 +44,28 @@ export function Navbar() {
       }
     };
 
+    const handleKeyDown = (event) => {
+      // Open search with Ctrl+K or Cmd+K
+      if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
+        event.preventDefault();
+        setSearchModalOpen(true);
+      }
+      // Close search with Escape
+      if (event.key === 'Escape' && searchModalOpen) {
+        setSearchModalOpen(false);
+      }
+    };
+
     document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
     window.addEventListener("scroll", handleScroll, { passive: true });
     
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [searchModalOpen]);
 
   return (
     <header className={`site-header ${isScrolled ? 'scrolled' : ''}`}>
@@ -91,13 +105,16 @@ export function Navbar() {
               <input
                 className="search-input"
                 type="text"
-                placeholder="What are you looking for?"
+                placeholder="ابحث عن المنتجات... (Ctrl+K)"
                 aria-label="Search"
                 readOnly
               />
               <button className="search-btn" aria-label="search button">
                 <img src={searchIcon} alt="search" className="icon-img" />
               </button>
+              <div className="search-shortcut">
+                <span>⌘K</span>
+              </div>
             </div>
 
             <Link
