@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useCart } from '../context/CartContext';
 import { useNavigate, Link } from 'react-router-dom';
+import { ImageWithFallback } from '../../../shared/components/image/ImageWithFallback';
 import './cart-page.css';
 import { toast } from 'react-toastify';
 
@@ -108,13 +109,11 @@ const CartPage = () => {
             <tr key={item.id}>
               <td className="product-info">
                 <div className="product-image-wrapper">
-                  <img
+                  <ImageWithFallback
                     src={item.image || item.images?.[0]}
                     alt={item.title}
                     className="product-image"
-                    onError={(e) => {
-                      e.target.src = "https://via.placeholder.com/80x80/f8f9fa/6c757d?text=📦";
-                    }}
+                    fallbackSrc="https://via.placeholder.com/80x80/f8f9fa/6c757d?text=📦"
                   />
                   <button
                     className="remove-btn"

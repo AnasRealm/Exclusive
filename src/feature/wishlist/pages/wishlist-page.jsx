@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useWishlist } from '../context/WishlistContext';
 import { useCart } from '../../cart/context/CartContext';
+import { ImageWithFallback } from '../../../shared/components/image/ImageWithFallback';
 import { Link } from 'react-router-dom';
 import './wishlist-page.css';
 
@@ -51,7 +52,7 @@ const WishlistPage = () => {
         {wishlistItems.map((item, index) => (
           <div key={`${refreshKey}-${item.id}-${index}`} className="wishlist-item">
             <div className="item-image">
-              <img src={item.image} alt={item.title} />
+              <ImageWithFallback src={item.image} alt={item.title} />
               <button 
                 className="remove-btn"
                 onClick={() => handleRemoveFromWishlist(item.id)}

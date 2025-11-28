@@ -76,7 +76,7 @@
       "id": "a80c",
       "name": "anas",
       "email": "anas.alholo.2005@gmail.com",
-      "password": "ششش"
+      "password": "shshs"
     },
     {
       "id": "10f1",
@@ -112,7 +112,7 @@
       "id": "f608",
       "name": "anas",
       "email": "anas@gmail.com",
-      "password": "ششش"
+      "password": "shshs"
     }
   ],
   "products": [
@@ -124,7 +124,7 @@
       "discount": 40,
       "rating": 4.5,
       "reviews": 88,
-      "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=300",
+      "image": "https://via.placeholder.com/300x300/DB4444/FFFFFF?text=Gamepad",
       "category": "Gaming",
       "isNew": false
     },
@@ -136,7 +136,7 @@
       "discount": 35,
       "rating": 4,
       "reviews": 75,
-      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300",
+      "image": "https://via.placeholder.com/300x300/2563EB/FFFFFF?text=Keyboard",
       "category": "Electronics",
       "isNew": false
     },
@@ -148,7 +148,7 @@
       "discount": 30,
       "rating": 5,
       "reviews": 99,
-      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300",
+      "image": "https://via.placeholder.com/300x300/059669/FFFFFF?text=Monitor",
       "category": "Electronics",
       "isNew": false
     },
@@ -160,7 +160,7 @@
       "discount": 25,
       "rating": 4.5,
       "reviews": 99,
-      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300",
+      "image": "https://via.placeholder.com/300x300/7C3AED/FFFFFF?text=Chair",
       "category": "Furniture",
       "isNew": true
     },
@@ -172,7 +172,7 @@
       "discount": 20,
       "rating": 4.8,
       "reviews": 150,
-      "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=300",
+      "image": "https://via.placeholder.com/300x300/000000/FFFFFF?text=iPhone",
       "category": "Electronics",
       "isNew": true
     },
@@ -184,7 +184,7 @@
       "discount": 15,
       "rating": 4.9,
       "reviews": 200,
-      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300",
+      "image": "https://via.placeholder.com/300x300/6B7280/FFFFFF?text=MacBook",
       "category": "Electronics",
       "isNew": false
     },
@@ -196,7 +196,7 @@
       "discount": 15,
       "rating": 4.7,
       "reviews": 320,
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300",
+      "image": "https://via.placeholder.com/300x300/1F2937/FFFFFF?text=Headphones",
       "category": "Electronics",
       "isNew": false
     },
@@ -208,7 +208,7 @@
       "discount": 17,
       "rating": 4.3,
       "reviews": 89,
-      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300",
+      "image": "https://via.placeholder.com/300x300/EF4444/FFFFFF?text=Nike",
       "category": "Fashion",
       "isNew": true
     },
@@ -220,7 +220,7 @@
       "discount": 15,
       "rating": 4.4,
       "reviews": 156,
-      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300",
+      "image": "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=Watch",
       "category": "Electronics",
       "isNew": false
     },
@@ -232,7 +232,7 @@
       "discount": 10,
       "rating": 4.9,
       "reviews": 67,
-      "image": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=300",
+      "image": "https://via.placeholder.com/300x300/DC2626/FFFFFF?text=Camera",
       "category": "Electronics",
       "isNew": true
     },
@@ -244,7 +244,7 @@
       "discount": 14,
       "rating": 4.6,
       "reviews": 234,
-      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=300",
+      "image": "https://via.placeholder.com/300x300/10B981/FFFFFF?text=Adidas",
       "category": "Fashion",
       "isNew": false
     },
@@ -256,7 +256,7 @@
       "discount": 14,
       "rating": 4.5,
       "reviews": 178,
-      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300",
+      "image": "https://via.placeholder.com/300x300/374151/FFFFFF?text=Dell",
       "category": "Electronics",
       "isNew": false
     },
@@ -268,7 +268,7 @@
       "discount": 17,
       "rating": 4.8,
       "reviews": 445,
-      "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=300",
+      "image": "https://via.placeholder.com/300x300/1E40AF/FFFFFF?text=PS5",
       "category": "Gaming",
       "isNew": true
     },
@@ -280,7 +280,7 @@
       "discount": 11,
       "rating": 4.7,
       "reviews": 289,
-      "image": "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=300",
+      "image": "https://via.placeholder.com/300x300/F3F4F6/000000?text=AirPods",
       "category": "Electronics",
       "isNew": false
     },
@@ -292,7 +292,7 @@
       "discount": 18,
       "rating": 4.2,
       "reviews": 167,
-      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300",
+      "image": "https://via.placeholder.com/300x300/FBBF24/000000?text=IKEA",
       "category": "Furniture",
       "isNew": false
     },
@@ -304,7 +304,7 @@
       "discount": 18,
       "rating": 4.4,
       "reviews": 134,
-      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=300",
+      "image": "https://via.placeholder.com/300x300/16A34A/FFFFFF?text=Razer",
       "category": "Gaming",
       "isNew": true
     },
@@ -316,7 +316,7 @@
       "discount": 17,
       "rating": 4.6,
       "reviews": 98,
-      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300",
+      "image": "https://via.placeholder.com/300x300/DC2626/FFFFFF?text=LG",
       "category": "Electronics",
       "isNew": false
     },
@@ -328,7 +328,7 @@
       "discount": 25,
       "rating": 4.1,
       "reviews": 267,
-      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=300",
+      "image": "https://via.placeholder.com/300x300/1D4ED8/FFFFFF?text=Levis",
       "category": "Fashion",
       "isNew": false
     },
@@ -340,7 +340,7 @@
       "discount": 13,
       "rating": 4.5,
       "reviews": 223,
-      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300",
+      "image": "https://via.placeholder.com/300x300/EF4444/FFFFFF?text=Nintendo",
       "category": "Gaming",
       "isNew": true
     }
@@ -349,17 +349,17 @@
     {
       "id": "1",
       "name": "Electronics",
-      "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300"
+      "image": "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=Electronics"
     },
     {
       "id": "2",
       "name": "Gaming",
-      "image": "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=300"
+      "image": "https://via.placeholder.com/300x300/7C3AED/FFFFFF?text=Gaming"
     },
     {
       "id": "3",
       "name": "Furniture",
-      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300"
+      "image": "https://via.placeholder.com/300x300/059669/FFFFFF?text=Furniture"
     }
   ]
 }

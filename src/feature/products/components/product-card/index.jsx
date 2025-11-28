@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../../cart/context/CartContext";
 import { useWishlist } from "../../../wishlist/context/WishlistContext";
+import { ImageWithFallback } from "../../../../shared/components/image/ImageWithFallback";
 import "./style.css";
 
 export function ProductCard({ product, showQuickActions = true }) {
@@ -68,7 +69,7 @@ export function ProductCard({ product, showQuickActions = true }) {
       )}
       
       <div className="product-image-container">
-        <img 
+        <ImageWithFallback 
           src={product.image} 
           alt={product.title || product.name}
           className="product-image"

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useCart } from '../../cart/context/CartContext';
 import { userStorage } from '../../auth/storage';
+import { ImageWithFallback } from '../../../shared/components/image/ImageWithFallback';
 import './checkout-page.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -275,7 +276,7 @@ const CheckoutPage = () => {
         <div className="order-summary">
           {cartItems.map((item) => (
             <div key={item.id} className="order-item">
-              <img src={item.image || item.images?.[0]} alt={item.title} />
+              <ImageWithFallback src={item.image || item.images?.[0]} alt={item.title} />
               <div className="item-details">
                 <span className="item-title">{item.title}</span>
                 <span className="item-quantity">Qty: {item.quantity}</span>

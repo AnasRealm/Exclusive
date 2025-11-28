@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { ImageWithFallback } from '../image/ImageWithFallback';
 import './SearchModal.css';
 
 export function SearchModal({ open, onClose }) {
@@ -144,7 +145,7 @@ export function SearchModal({ open, onClose }) {
                       onClick={() => handleProductClick(product)}
                       onMouseEnter={() => setSelectedIndex(index)}
                     >
-                      <img src={product.image} alt={product.name} className="product-image" />
+                      <ImageWithFallback src={product.image} alt={product.name} className="product-image" />
                       <div className="product-info">
                         <h4 className="product-name">{product.name}</h4>
                         <div className="product-details">

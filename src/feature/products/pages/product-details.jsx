@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useProduct } from "../services/queries";
 import { useCart } from "../../cart/context/CartContext";
 import { useWishlist } from "../../wishlist/context/WishlistContext";
+import { ImageWithFallback } from "../../../shared/components/image/ImageWithFallback";
 import iconDelivery from "../../../assets/imges/icon-delivery.png";
 import iconReturn from "../../../assets/imges/Icon-return.png";
 import "./product-details.css";
@@ -56,12 +57,12 @@ export function ProductDetails() {
                   }`}
                   onClick={() => setSelectedImage(index)}
                 >
-                  <img src={image} alt={`Product ${index + 1}`} />
+                  <ImageWithFallback src={image} alt={`Product ${index + 1}`} />
                 </div>
               ))}
             </div>
             <div className="main-image">
-              <img src={productImages[selectedImage]} alt={product.title} />
+              <ImageWithFallback src={productImages[selectedImage]} alt={product.title} />
             </div>
           </div>
 
