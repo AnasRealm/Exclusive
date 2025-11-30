@@ -1,4 +1,5 @@
-import { useProducts } from '../../services/queries';
+import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 import { ProductCard } from '../product-card';
 import { CountdownTimer } from './countdown-timer';
 import { Link } from 'react-router-dom';
@@ -9,7 +10,13 @@ import 'swiper/css/navigation';
 import './style.css';
 
 export function FlashSales() {
-  const { data: products, isLoading, error } = useProducts(10, 0);
+  const { data: products = [], isLoading, error } = useQuery({
+    queryKey: ['flash-products'],
+    queryFn: async () => {
+      const response = await axios.get(`${import.meta.env.VITE_API_BASE}/products?offset=0&limit=8`);
+      return response.data;
+    }
+  });
 
   if (isLoading) return (
     <div className="loading">
@@ -19,23 +26,11 @@ export function FlashSales() {
   );
   if (error) return <div className="error">Error loading products: {error.message}</div>;
 
-  // Create products with discounts
-  const baseProducts = products?.slice(0, 5) || [];
-  const flashProducts = [];
-  
-  // Create 8 products
-  for (let i = 0; i < 8; i++) {
-    const product = baseProducts[i % baseProducts.length];
-    if (product) {
-      flashProducts.push({
-        ...product,
-        id: `${product.id}-${i}`,
-        discount: [40, 35, 30, 25, 20, 45, 50, 15][i] || 30
-      });
-    }
-  }
-
-  console.log('Flash Products:', flashProducts);
+  // Add discounts to products
+  const flashProducts = products.map((product, index) => ({
+    ...product,
+    discount: [40, 35, 30, 25, 20, 45, 50, 15][index] || 30
+  }));
 
   return (
     <section className="flash-sales-section">
@@ -101,8 +96,8 @@ export function FlashSales() {
           }}
           className="flash-swiper"
         >
-          {flashProducts.map((product, index) => (
-            <SwiperSlide key={`${product.id}-${index}`}>
+          {flashProducts.map((product) => (
+            <SwiperSlide key={product.id}>
               <ProductCard 
                 product={product} 
                 discount={product.discount}

@@ -105,7 +105,7 @@ export function Navbar() {
               <input
                 className="search-input"
                 type="text"
-                placeholder="ابحث عن المنتجات... (Ctrl+K)"
+                placeholder="what are you looking for? "
                 aria-label="Search"
                 readOnly
               />

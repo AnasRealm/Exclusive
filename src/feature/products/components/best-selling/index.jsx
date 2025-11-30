@@ -1,9 +1,16 @@
-import { useProducts } from '../../services/queries';
+import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 import { ProductCard } from '../product-card';
 import './style.css';
 
 export function BestSelling() {
-  const { data: products, isLoading } = useProducts(4, 0);
+  const { data: products = [], isLoading } = useQuery({
+    queryKey: ['best-selling'],
+    queryFn: async () => {
+      const response = await axios.get(`${import.meta.env.VITE_API_BASE}/products?offset=8&limit=4`);
+      return response.data;
+    }
+  });
 
   if (isLoading) return <div className="loading">Loading...</div>;
 
@@ -20,7 +27,7 @@ export function BestSelling() {
       </div>
       
       <div className="products-grid">
-        {products?.slice(0, 4).map((product) => (
+        {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>

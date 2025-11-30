@@ -40,12 +40,12 @@ function ProductsPage() {
     return filtered;
   }, [allProducts, searchTerm, category, type]);
 
-  if (isLoading) return <div className="loading">جاري تحميل المنتجات...</div>;
-  if (error) return <div className="error">خطأ في تحميل المنتجات: {error.message}</div>;
+  if (isLoading) return <div className="loading">downloading...</div>;
+  if (error) return <div className="error">Error loading products: {error.message}</div>;
 
   const getPageTitle = () => {
     if (searchTerm) {
-      return `نتائج البحث عن "${searchTerm}"`;
+      return `Search results for "${searchTerm}"`;
     }
     if (type) {
       return `${type.charAt(0).toUpperCase() + type.slice(1)} Products`;
@@ -53,15 +53,15 @@ function ProductsPage() {
     if (category) {
       return `${category.charAt(0).toUpperCase() + category.slice(1)} Products`;
     }
-    return 'جميع المنتجات';
+    return 'All Products';
   };
 
   const getFilterInfo = () => {
     if (searchTerm) {
-      return `عرض ${filteredProducts.length} نتيجة للبحث عن "${searchTerm}"`;
+      return `Showing ${filteredProducts.length} result(s) for "${searchTerm}"`;
     }
     if (category || type) {
-      return `عرض المنتجات لـ: ${type || category}`;
+      return `Showing products for: ${type || category}`;
     }
     return null;
   };
@@ -79,7 +79,7 @@ function ProductsPage() {
                 className="clear-filters"
                 onClick={() => window.location.href = '/products'}
               >
-                مسح الفلاتر
+                Clear Filters
               </button>
             )}
           </div>
@@ -109,8 +109,8 @@ function ProductsPage() {
           <h3>لا توجد منتجات</h3>
           <p>
             {searchTerm 
-              ? `لم نجد أي منتجات تطابق بحثك عن "${searchTerm}"`
-              : 'لا توجد منتجات متاحة حالياً'
+              ? `no results found for "${searchTerm}"`
+              : 'No products available at the moment'
             }
           </p>
           {searchTerm && (
@@ -118,7 +118,7 @@ function ProductsPage() {
               className="browse-all-btn"
               onClick={() => window.location.href = '/products'}
             >
-              تصفح جميع المنتجات
+              Browse All Products
             </button>
           )}
         </div>

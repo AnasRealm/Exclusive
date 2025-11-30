@@ -18,18 +18,18 @@ export function ProductCard({ product, showQuickActions = true }) {
   
   const isWishlisted = localWishlistState;
   
-  const rating = product.rating || 4.5;
-  const reviewCount = product.reviews || 50;
+  const rating = 4.5; // Static rating since API doesn't provide
+  const reviewCount = Math.floor(Math.random() * 100) + 10;
   const discount = product.discount || 0;
-  const originalPrice = product.originalPrice;
+  const originalPrice = discount > 0 ? Math.round(product.price * 1.2) : null;
   const currentPrice = product.price;
 
   const handleAddToCart = () => {
     addToCart({
       id: product.id,
-      title: product.title || product.name,
+      title: product.title,
       price: product.price,
-      image: product.image,
+      image: product.images[0],
       quantity: 1
     });
   };
@@ -44,9 +44,9 @@ export function ProductCard({ product, showQuickActions = true }) {
     } else {
       addToWishlist({
         id: product.id,
-        title: product.title || product.name,
+        title: product.title,
         price: product.price,
-        image: product.image
+        image: product.images[0]
       });
       setLocalWishlistState(true);
     }
@@ -70,8 +70,8 @@ export function ProductCard({ product, showQuickActions = true }) {
       
       <div className="product-image-container">
         <ImageWithFallback 
-          src={product.image} 
-          alt={product.title || product.name}
+          src={product.images[0]} 
+          alt={product.title}
           className="product-image"
         />
         
@@ -109,7 +109,7 @@ export function ProductCard({ product, showQuickActions = true }) {
       </div>
       
       <div className="product-info">
-        <h3 className="product-title">{product.title || product.name}</h3>
+        <h3 className="product-title">{product.title}</h3>
         
         <div className="product-pricing">
           <span className="current-price">${currentPrice}</span>

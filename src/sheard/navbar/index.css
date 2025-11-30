@@ -1,7 +1,9 @@
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background: white;
   transition: box-shadow 0.2s;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
